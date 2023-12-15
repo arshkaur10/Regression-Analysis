@@ -1,0 +1,9 @@
+#midterm
+data=read.csv("Heartfailureclinicalrecords.csv")
+View(data)
+
+plot_A = lm (anaemia~age,data=data)
+summary(plot_A)
+
+plot_B=lm(anaemia~age+ejection_fraction,data=data)
+summary(plot_B)
